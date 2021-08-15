@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgawall"
+    android:padding="@dimen/dp16"
+    tools:context=".NarativeActivity2">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/icbtnclose"
+        android:clickable="true"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/materi"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/btnClose"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/infobg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Sangkuriang"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNara2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_below="@id/text"
+                    android:layout_marginEnd="25dp"
+                    android:text="\t\tOnce upon a time in West Java, Indonesia, lived a princess named Dayang
+Sumbi. She was beautiful and kind-hearted. Her hobby was weaving
+cloth. But sometimes she could be very lazy. One day her weaving tool
+fell, but she was too lazy to get it herself. She shouted out, “Can anybody
+help me get my tool? If you are a female, I will take you as my sister. If
+you are a male, I will marry you!”\n
+\n\t\tA male creature came, but it was a dog. His name was Tumang. He
+happily brought the tool to her. Dayang Sumbi was very surprised, but
+she kept her promise. She married the dog. Tumang was actually a man
+who had been cursed by a witch to become a dog. But at certain times
+Tumang could turn back to be a normal man. Their only son, Sangkuriang,
+was soon born, and he grew up to be a handsome and healthy boy. He
+always played with his very loyal dog, Tumang. He did not know that he
+was actually his father, because Dayang Sumbi hid the secret from him.
+Sangkuriang liked to hunt in the woods, of course with Tumang.\n
+\n\t\tOne day Dayang Sumbi asked him to bring home a deer’s heart. But,
+after hunting for several days, he could not fi nd any deer in the woods.
+He did not want to disappoint his mother and was thinking hard how to
+bring home a deer’s heart. Suddenly, he had a very bad idea. He killed
+Tumang! Then, he brought his heart home and gave it to Dayang Sumbi.Sangkuring could not cheat her. She knew it was Tumang’s heart. So, she
+got very angry and hit Sangkuriang’s forehead with a piece of wood and
+told him to leave. With a bad wound on his forehead, Sangkuriang left
+the village.\n
+\n\t\tMany years later, Sangkuriang grew up to be a powerful man. One day
+he went back to his village. He met a beautiful young woman there,
+and he fell in love with her at the fi rst sight. It was Dayang Sumbi! She
+never got older because she had been granted eternal youth by the gods.
+Sangkuriang did not know that she was his mother, so he came to her and
+proposed to marry her.\n
+\n\t\tWhen he walked closer to her, Dayang Sumbi got very surprised. She
+saw the scar in Sangkuriang’s forehead, and soon she knew that he was
+her son, who left her a long time ago. She told him the truth and tried
+hard to explain it to him, but he did not believe her. She did not want to
+break his heart, so she accepted his proposal but gave him an impossible
+thing to do. She wanted him to build a lake and a boat in just one night!\n
+\n\t\tSangkuriang agreed, because he knew that he could make it with the help
+of his genies. By midnight he fi nished the lake and then started making
+the boat. Dayang Sumbi was thinking hard to fi nd a way to fail him.
+Before dawn, she asked the people in the village to burn the woods in the
+East, and the light made all the cocks crow. Thinking that the night would
+be over soon, the genies ran fast and left Sangkuriang before the boat was
+fi nished. Sangkuriang realized that Dayang Sumbi had cheated him. He
+got very angry and he kicked the boat upside down. It gradually became
+a mountain and it is now known as Mt. Tangkuban Perahu.\n
+"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/ytbPlaysimple"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/txt3"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp40"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginBottom="@dimen/dp40"
+                    app:showFullScreenButton="false"
+                    app:videoId="nI_MVxHZMEk"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/judulMateri"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/btnClose"
+        android:layout_alignBaseline="@id/materi"
+        android:background="@drawable/txtexample" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/icbtnback"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp16"
+            android:background="@drawable/icbtnnext"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

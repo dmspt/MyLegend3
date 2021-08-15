@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmaterii"
+    android:padding="@dimen/dp16"
+    tools:context=".KompetensiActivity">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/icbtnclose"
+        android:clickable="true"
+        android:onClick="close"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/instruksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClose"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/infobg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp20">
+
+                    <TextView
+                        android:id="@+id/txtkom"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jenjang \t : SMP/MTS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp17" />
+
+                    <TextView
+                        android:id="@+id/txtkom2"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas\t\t\t : IX"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp17" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/k13" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp4"
+            android:layout_marginEnd="@dimen/dp4"
+            android:background="@color/strokeGreen" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/txtkom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kompetensi Dasar"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_marginStart="@dimen/dp8"
+                    android:textSize="@dimen/sp17"
+                    android:textStyle="bold"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtkom4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="1.Menerapkan fungsi sosial, struktur teks, dan unsur kebahasaan teks interaksi
+transaksional lisan dan tulis yang melibatkan tindakan memberi dan meminta
+informasi terkait keadaan/tindakan/kegiatan/kejadian yang sedang dilakukan/
+terjadi pada saat ini, waktu lampau, dan waktu yang akan datang, sesuai dengan
+konteks penggunaannya (perhatikan unsur kebahasaan present continuous, past
+continuous, will+continuous).
+\n2. Menyusun teks interaksi transaksional lisan dan tulis sangat pendek dan
+sederhana yang melibatkan tindakan memberi dan meminta informasi terkait
+keadaan/tindakan/kegiatan/kejadian yang sedang dilakukan/terjadi pada saat
+ini, waktu lampau, dan waktu yang akan datang, dengan memperhatikan fungsi
+sosial, struktur teks, dan unsur kebahasaan yang benar dan sesuai konteks.
+\n3. Membandingkan fungsi sosial, struktur teks, dan unsur kebahasaan beberapa
+teks naratif lisan dan tulis dengan memberi dan meminta informasi terkait fairy
+tales, pendek dan sederhana, sesuai dengan konteks penggunaannya.
+\n4. Menangkap makna secara kontekstual terkait fungsi sosial, struktur teks,
+dan unsur kebahasaan teks naratif, lisan dan tulis, sangat pendek dan sederhana,
+terkait fairy tales.\n"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/judulMateri"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/btnClose"
+        android:layout_alignBaseline="@id/instruksi"
+        android:background="@drawable/txtkompetensi" />
+
+</RelativeLayout>

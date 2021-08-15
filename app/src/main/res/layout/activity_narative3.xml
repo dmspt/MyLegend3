@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgawal"
+    android:padding="@dimen/dp16"
+    tools:context=".NarativeActivity3">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/btnclose"
+        android:clickable="true"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/materi"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/btnClose"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/infobg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNaras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Surabaya"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNaras2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_below="@id/text"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="\t\tA long time ago, there were two animals, Sura and Baya. Sura was the name of a shark and Baya was a crocodile. They lived in a sea.
+Once Sura and Baya were looking for some food. Suddenly, Baya saw a goat. “Yummy, this is my lunch,” said Baya.
+“No way! This is my lunch. You are greedy” said Sura. Then they fought for the goat. After several hours, they were very tired.
+\n\n\t\tFeeling tired of fighting, they lived in the different places. Sura lived in the water and Baya lived in the land. The border was the beach, so they would never fight again.
+One day, Sura went to the land and looked for some food in the river. He was very hungry and there was not much food in the sea. Baya was very angry when he knew that Sura broke the promise.
+They fought again. They both hit each other. Sura bit Baya’s tail. Baya did the same thing to Sura. He bit Sura very hard. Sura finally gave up and went back to the sea. Baya was happy.\n
+                    "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/ytbPlaysimple"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/txt3"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp40"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginBottom="@dimen/dp40"
+                    app:showFullScreenButton="false"
+                    app:videoId="oMsNXur8qLA"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/judulMateri"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/btnClose"
+        android:layout_alignBaseline="@id/materi"
+        android:background="@drawable/titleexample" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/btnback"
+        android:clickable="true" />
+
+</RelativeLayout>

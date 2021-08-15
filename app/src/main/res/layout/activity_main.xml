@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgawall"
+    android:padding="@dimen/dp16"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mylegend"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="@dimen/dp120"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/txtmylegend" />
+
+    <ScrollView
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnMateri"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/icbtnmateri" />
+
+            <ImageButton
+                android:id="@+id/btnKompetensi"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/icbtnkompetensi"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/btnEvaluasi"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/icbtneval"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/btnGame"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/icbtngame"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_below="@id/btn"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/icbtninfo"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/btnSound"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/icbtnsoundoff"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

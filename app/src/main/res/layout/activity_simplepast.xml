@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgawall"
+    android:padding="@dimen/dp16"
+    tools:context=".SimplepastActivity">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/icbtnclose"
+        android:clickable="true"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/materi"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/btnClose"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/infobg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="@dimen/dp16">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="\t\tSimple Past Tense dalam bahasa Inggris adalah sebuah tenses yang khusus digunakan untuk menyatakan semua peristiwa yang telah terjadi di waktu lampau atau di masa lalu.
+                            \n\t\tSimple Past Tense hampir sama dengan Simple Present Tense, namun waktunya saja yang berbeda. Jika Simple Present Tense menyatakan peristiwa di masa kini, sedangkan Simple Past Tense menyatakan sebuah peristiwa yang sudah terjadi di masa lalu.
+                            \n\n\t\tPada dasarnya Simple Past Tense menggunakan verb 2 sebagai kata kerja. Simple Past Tense cukup sederhana, karena hanya digunakan untuk menjelaskan peristiwa yang terjadi di masa lalu. Pada dasarnya rumus yang digunakan adalah S + Verb 2. Pada kalimat nominal 'to be' harus diganti dengan Verb 2, yaitu was atau were sedangkan untuk keterangan waktu yang menunjukkan kejadian tersebut di masa lalu seperti yesterday (kemarin), last week (minggu lalu), last night (kemarin malam), last friday (jum'at lalu), a year ago (setahun yang lalu), dan lain - lain.
+                            "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/txtSim2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSim"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Perhatikan tabel Rumus berikut."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/txtSim2"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/tabell" />
+
+                <TextView
+                    android:id="@+id/txtSim4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/photo"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Ketuk 2X untuk Zoom gambar."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp10" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtSim3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSim4"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="\t\tPada kalimat negative dan interogative Verb (kata kerja) yang digunakan kembali menggunakan Verb 1, karena Verb 2 sudah diwakilkan oleh 'DID' sebagai Verb 2.
+                                  \nJika masih kurang paham, silahkan tonton video penjelasan berikut.\n"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/ytbPlaysimple"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/txtSim3"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp40"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginBottom="@dimen/dp40"
+                    app:showFullScreenButton="false"
+                    app:videoId="CApPEgntWag"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/judulMateri"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/btnClose"
+        android:layout_alignBaseline="@id/materi"
+        android:background="@drawable/txtsimplepast" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/icbtnnext"
+        android:clickable="true" />
+
+</RelativeLayout>

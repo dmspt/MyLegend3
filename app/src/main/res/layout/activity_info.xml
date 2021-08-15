@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp16"
+    android:background="@drawable/bgawall"
+    tools:context=".InfoActivity">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icbtnclose"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:id="@+id/info"
+        android:layout_width="320dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/infobg">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="480dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp40"
+                    android:background="@drawable/roundgreen"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:gravity="center"
+                        android:text="Pengembang"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="140dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:background="@color/strokeGreen" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="Duwi Lufita Marfiana"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="IG @luplll1103"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="Adam Septa Alghifari"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="IG @dmspt__"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="210dp"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/roundgreen"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Daftar Pustaka"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:background="@color/strokeGreen" />
+
+                </LinearLayout>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:text="Bahasa Inggris, Think Globally Act Locally : buku guru/ Kementerian Pendidikan
+dan Kebudayaan.-- . Edisi Revisi Jakarta : Kementerian Pendidikan dan Kebudayaan,
+2018.
+vi
+\nUntuk SMP/MTs Kelas IX
+\nISBN 978-602-282-980-5 (jilid lengkap)
+\nISBN 978-602-282-983-6 (jilid 3)\t"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="Backsound : \'\'Chimez\'\' Dan Henig, You Tube Audio Library Music"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/txttentang" />
+
+</RelativeLayout>

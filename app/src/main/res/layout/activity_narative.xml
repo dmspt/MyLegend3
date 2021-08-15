@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgawall"
+    android:padding="@dimen/dp16"
+    tools:context=".NarativeActivity">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/icbtnclose"
+        android:clickable="true"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/materi"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/btnClose"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/infobg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="\t\tNarrative text adalah cerita fiksi atau cerita karangan yang dibuat untuk menghibur pembaca. Narrative text biasanya kita jumpai dalam bentuk dongeng, cerita rakyat, maupun cerita fiksional lainnya. Tujuan Narrative text adalah untuk menghibur pembaca atau pendengar dalam suatu cerita dengan kejadian berurutan yang mengarah ke dalam suatu klimaks, dan akhirnya menemukan penyelesaian.
+                                  \t"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/txtNar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Narrative text mempunyai 3 susunan struktur seperti berikut ini :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/txtNar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Orientation"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Bagian Orientation berisi tentang pengenalan tokoh-tokoh, latar belakang tempat dan waktu dari cerita. (siapa, apa, kapan, dan dimana)."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/txtNar5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Complication"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Pada bagian complication, masalah - masalah mulai muncul dan harus di selesaikan oleh tokoh utama pada cerita tersebut.\t\t\t"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/txtNar7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Resolution"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Resolution adalah dimana cerita berakhir. Pada bagian ini masalah terselesaikan oleh si tokoh utama. Dalam bagian Resolution juga biasanya terdapat moral value atau nasihat dari cerita tersebut atau yang biasa disebut juga dengan Coda.\n"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="\t\tNarrative text biasanya menggunakan grammar atau tata bahasa tertentu sebagai ciri - ciri narrative text.
+                                  \n\t\tDalam Narrative text kita harus menggunakan bentuk lampau atau past, karena cerita ini merupakan cerita karangan atau fiksi. Bentuk tenses bisa menggunakan past perfect, past continuous, past perfect continuous, atau bisa saja past future continuous. Semua aturan ini tidak harus dijadikan sebagai acuan karena tenses itu mengacu kepada kondisi dan situasi kalimat.
+                                  \nBerikut merupakan ciri - ciri Narrative Text : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtNar10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="- Menggunakan Action Verb dalam bentuk Past Tense. Contoh : ate, studied, grew, dsb.
+                                  \n- Menggunakan Nouns tertentu sebagai kata ganti orang, hewan dan benda tertentu dalam cerita. Contoh : the princess, the girl, the queen, dsb.
+                                  \n- Menggunakan Adjectives yang membentuk noun phrase. Contoh : The red riding hood, the poisoned apple, dsb.
+                                  \n- Menggunakan Time Connectives dan Conjunctions untuk mengurutkan kejadian-kejadian. Contoh : before, after, then, next, soon, dsb.
+                                  \n- Menggunakan Adverbs dan Adverbial Phrase untuk menunjukkan lokasi kejadian atau peristiwa. Misalnya : on the sea, in the mountain, there, happily ever after, dsb.
+                                  \n\nJika masih kurang paham, silahkan tonton video penjelasan berikut.\n"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/ytbPlaysimple"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="@dimen/dp40"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginBottom="@dimen/dp40"
+                    app:showFullScreenButton="false"
+                    app:videoId="vrQS03rVSNc"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/judulMateri"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/btnClose"
+        android:layout_alignBaseline="@id/materi"
+        android:background="@drawable/txtnarativ" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/icbtnnext"
+        android:clickable="true" />
+
+</RelativeLayout>

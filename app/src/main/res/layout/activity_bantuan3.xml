@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgawal"
+    android:orientation="vertical"
+    tools:context=".Bantuan3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp210"
+            android:layout_height="@dimen/dp100"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mylegend2" />
+
+        <Button
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/btnclose"
+            android:onClick="close" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="240dp"
+            android:layout_height="480dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:background="@color/transparanWhite">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/img"
+                android:padding="@dimen/dp8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jawaban" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp4"
+            android:text="Ketuk 2X untuk Zoom gambar."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp10" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/btnnext" />
+
+    </RelativeLayout>
+
+</LinearLayout>

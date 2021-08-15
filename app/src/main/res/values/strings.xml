@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Legend</string>
+
+    <string name="instruksi">Petunjuk : </string>
+    <string name="petunjuk">1.\t Uji Pemahaman ini terdiri atas 20\n\t\t\t soal pilihan ganda dengan KKM 70.\n\n 2.\t Kemudian klik tombol mulai untuk mengerjakan.\n\n 3.\t Klik tombol pilihan untuk memilih jawaban.</string>
+    <string name="txtMulai">Mulai</string>
+
+</resources>

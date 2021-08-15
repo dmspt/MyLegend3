@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgawall"
+    android:padding="@dimen/dp16"
+    tools:context=".SimplepastActivity2">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/icbtnclose"
+        android:layout_alignParentRight="true"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/materi"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/btnClose"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp8"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/infobg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="@dimen/dp16">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSimp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Contoh Penggunaan Simple Past Tense"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtSimp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_below="@id/txtSimp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Digunakan untuk menunjukkan aktivitas yang terjadi pada masa lalu dengan keterangan waktu tertentu :
+                                  \n   I saw her last night.
+                                  \n   I ate pizza last night.\n
+                                  \nDigunakan ketika ada kejadian yang terjadi bersamaan pada masa lalu :
+                                  \n   I was listening to my sister when she studied.
+                                  \n   It was raining when he knocked the door.\n
+                                  \nDigunakan untuk menunjukkan rangkaian peristiwa pada masa lalu :
+                                  \n   First the man got up, then he had breakfast.
+                                  \n   I went to market and I bought a book.\n"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/txtSimp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSimp2"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Simple Past Tense dan Contoh pada jenis - jenis text Bahasa Inggris"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/txtSimp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSimp3"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:text="Simple Past Tense Pada Teks Narative :
+                                  Once upon a time in West Java, Indonesia, lived a princess named Dayang Sumbi. She was beautiful and kind-hearted.
+                                  \n\t\tDalam cerita narative  tentang Sangkuriang diatas, semua kalimatnya ditulis memakai Simple Past Tense. Ada yang tahu kenapa? Ya karena Tokoh Sangkuriang dan semua peristiwa yang dialaminya dianggap lampau alias telah terjadi. Sehingga memakai ”was” pada kalimat kedua. Kata kerja “lived” pada kalimat pertama.
+                                  \n\nSimple Past Tense Pada Kebanyakan Contoh Text Recount :
+                                  \nLet me remind you my experience during an earthquake last week. When the earthquake happened, I was on my car. I was driving home from my vocation to Bali.
+                                  \n\t\tPotongan paragraph pendek diatas adalah recount text dan tentu kebanyakan pasti ditulis memakai Simple Past Tense dan sebagai mana dikatakan diatas juga bersamaan memakai tenses Past Continuous Tense.\n
+                                  \nSimple Past Tense Yang Biasanya Ditemukan Pada Contoh News Item Text :
+                                  \nThe explosion in Idvor, north of Belgrade, occurred at 2:30 a.m. Sunday (0030 GMT Sunday; 8:30 p.m. EDT Saturday) when a man activated the grenade at the entrance to the club.
+                                  \n\t\tAda peristiwa ledakan hari minggu jam 2:30AM masuk peristiwa lampau karena wartawan biasanya masih membutuhkan beberapa saat ketika peritiwa itu terjadi.
+                                  \n"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/judulMateri"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-16dp"
+        android:layout_below="@id/btnClose"
+        android:layout_alignBaseline="@id/materi"
+        android:background="@drawable/txtexample" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/icbtnback" />
+
+</RelativeLayout>
